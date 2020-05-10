@@ -3,7 +3,6 @@ package com.example.dagger.dagger2demo.module;
 import android.content.Context;
 
 import com.example.dagger.dagger2demo.model.ICommonView;
-import com.example.dagger.dagger2demo.scope.ActivityScope;
 
 import dagger.Module;
 import dagger.Provides;
@@ -20,7 +19,6 @@ public class CommonModule
 
 
     @Provides
-    @ActivityScope
     public ICommonView provideIcommonView(){
         return this.iView;
     }
